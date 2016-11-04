@@ -2758,3 +2758,529 @@ KeyError: 'pop from an empty set'
  'spider_exceptions/ValueError': 10,
  'start_time': datetime.datetime(2016, 11, 3, 2, 21, 46, 236000)}
 2016-11-03 13:38:53 [scrapy] INFO: Spider closed (finished)
+2016-11-04 09:34:25 [scrapy] INFO: Scrapy 1.0.6 started (bot: Sina_spider1)
+2016-11-04 09:34:25 [scrapy] INFO: Optional features available: ssl, http11
+2016-11-04 09:34:25 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'Sina_spider1.spiders', 'LOG_LEVEL': 'INFO', 'CONCURRENT_REQUESTS_PER_DOMAIN': 1000000, 'CONCURRENT_REQUESTS': 400, 'SPIDER_MODULES': ['Sina_spider1.spiders'], 'BOT_NAME': 'Sina_spider1', 'LOG_STDOUT': True, 'LOG_FILE': 'weibo_log.txt', 'DOWNLOAD_DELAY': 0.05}
+2016-11-04 09:34:25 [scrapy] INFO: Enabled extensions: CloseSpider, TelnetConsole, LogStats, CoreStats, SpiderState
+2016-11-04 09:34:25 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): login.sina.com.cn
+2016-11-04 09:34:26 [stdout] INFO: Get Cookie Success!( Account:dutn6641847shaoxu@163.com )
+2016-11-04 09:34:26 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): login.sina.com.cn
+2016-11-04 09:34:26 [stdout] INFO: Get Cookie Success!( Account:dva44156383dimu@163.com )
+2016-11-04 09:34:26 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): login.sina.com.cn
+2016-11-04 09:34:27 [stdout] INFO: Get Cookie Success!( Account:dvb0290688kangp@163.com )
+2016-11-04 09:34:27 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): login.sina.com.cn
+2016-11-04 09:34:27 [stdout] INFO: Get Cookie Success!( Account:17090817610 )
+2016-11-04 09:34:27 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): login.sina.com.cn
+2016-11-04 09:34:27 [stdout] INFO: Get Cookie Success!( Account:15579756419 )
+2016-11-04 09:34:27 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): login.sina.com.cn
+2016-11-04 09:34:27 [stdout] INFO: Get Cookie Success!( Account:18740145826 )
+2016-11-04 09:34:27 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): login.sina.com.cn
+2016-11-04 09:34:28 [stdout] INFO: Get Cookie Success!( Account:17161744045 )
+2016-11-04 09:34:28 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): login.sina.com.cn
+2016-11-04 09:34:28 [stdout] INFO: Get Cookie Success!( Account:pyyana8689@163.com )
+2016-11-04 09:34:28 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): login.sina.com.cn
+2016-11-04 09:34:28 [stdout] INFO: Get Cookie Success!( Account:qflwibpv7625@163.com )
+2016-11-04 09:34:28 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): login.sina.com.cn
+2016-11-04 09:34:28 [stdout] INFO: Get Cookie Success!( Account:qezqmpoz99104@163.com )
+2016-11-04 09:34:28 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): login.sina.com.cn
+2016-11-04 09:34:29 [stdout] INFO: Get Cookie Success!( Account:qfpjtiwqb532238@163.com )
+2016-11-04 09:34:29 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): login.sina.com.cn
+2016-11-04 09:34:29 [stdout] INFO: Get Cookie Success!( Account:qianbei80778you@163.com )
+2016-11-04 09:34:29 [stdout] INFO: Get Cookies Finish!( Num:12)
+2016-11-04 09:34:29 [scrapy] INFO: Enabled downloader middlewares: HttpAuthMiddleware, DownloadTimeoutMiddleware, UserAgentMiddleware, UserAgentMiddleware, CookiesMiddleware, RetryMiddleware, DefaultHeadersMiddleware, MetaRefreshMiddleware, HttpCompressionMiddleware, RedirectMiddleware, CookiesMiddleware, ChunkedTransferMiddleware, DownloaderStats
+2016-11-04 09:34:29 [scrapy] INFO: Enabled spider middlewares: HttpErrorMiddleware, OffsiteMiddleware, RefererMiddleware, UrlLengthMiddleware, DepthMiddleware
+2016-11-04 09:34:29 [scrapy] INFO: Enabled item pipelines: MongoDBPipleline
+2016-11-04 09:34:29 [scrapy] INFO: Spider opened
+2016-11-04 09:34:29 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-11-04 09:35:29 [scrapy] INFO: Crawled 927 pages (at 927 pages/min), scraped 6743 items (at 6743 items/min)
+2016-11-04 09:36:29 [scrapy] INFO: Crawled 1880 pages (at 953 pages/min), scraped 13424 items (at 6681 items/min)
+2016-11-04 09:37:29 [scrapy] INFO: Crawled 2839 pages (at 959 pages/min), scraped 20584 items (at 7160 items/min)
+2016-11-04 09:38:29 [scrapy] INFO: Crawled 3794 pages (at 955 pages/min), scraped 27997 items (at 7413 items/min)
+2016-11-04 09:39:29 [scrapy] INFO: Crawled 4759 pages (at 965 pages/min), scraped 35631 items (at 7634 items/min)
+2016-11-04 09:40:29 [scrapy] INFO: Crawled 5704 pages (at 945 pages/min), scraped 43436 items (at 7805 items/min)
+2016-11-04 09:41:29 [scrapy] INFO: Crawled 6656 pages (at 952 pages/min), scraped 51582 items (at 8146 items/min)
+2016-11-04 09:42:29 [scrapy] INFO: Crawled 7616 pages (at 960 pages/min), scraped 59829 items (at 8247 items/min)
+2016-11-04 09:43:29 [scrapy] INFO: Crawled 8560 pages (at 944 pages/min), scraped 68104 items (at 8275 items/min)
+2016-11-04 09:44:29 [scrapy] INFO: Crawled 9522 pages (at 962 pages/min), scraped 76666 items (at 8562 items/min)
+2016-11-04 09:45:29 [scrapy] INFO: Crawled 10477 pages (at 955 pages/min), scraped 85066 items (at 8400 items/min)
+2016-11-04 09:46:29 [scrapy] INFO: Crawled 11446 pages (at 969 pages/min), scraped 93887 items (at 8821 items/min)
+2016-11-04 09:47:29 [scrapy] INFO: Crawled 12390 pages (at 944 pages/min), scraped 102525 items (at 8638 items/min)
+2016-11-04 09:48:29 [scrapy] INFO: Crawled 13348 pages (at 958 pages/min), scraped 111174 items (at 8649 items/min)
+2016-11-04 09:49:29 [scrapy] INFO: Crawled 14299 pages (at 951 pages/min), scraped 119976 items (at 8802 items/min)
+2016-11-04 09:50:29 [scrapy] INFO: Crawled 15242 pages (at 943 pages/min), scraped 128700 items (at 8724 items/min)
+2016-11-04 09:51:29 [scrapy] INFO: Crawled 16191 pages (at 949 pages/min), scraped 137126 items (at 8426 items/min)
+2016-11-04 09:52:29 [scrapy] INFO: Crawled 17146 pages (at 955 pages/min), scraped 145813 items (at 8687 items/min)
+2016-11-04 09:53:29 [scrapy] INFO: Crawled 18101 pages (at 955 pages/min), scraped 154220 items (at 8407 items/min)
+2016-11-04 09:54:29 [scrapy] INFO: Crawled 19056 pages (at 955 pages/min), scraped 162368 items (at 8148 items/min)
+2016-11-04 09:55:29 [scrapy] INFO: Crawled 20015 pages (at 959 pages/min), scraped 170512 items (at 8144 items/min)
+2016-11-04 09:56:29 [scrapy] INFO: Crawled 20966 pages (at 951 pages/min), scraped 178118 items (at 7606 items/min)
+2016-11-04 09:57:29 [scrapy] INFO: Crawled 21926 pages (at 960 pages/min), scraped 185848 items (at 7730 items/min)
+2016-11-04 09:58:29 [scrapy] INFO: Crawled 22877 pages (at 951 pages/min), scraped 193605 items (at 7757 items/min)
+2016-11-04 09:59:29 [scrapy] INFO: Crawled 23839 pages (at 962 pages/min), scraped 201215 items (at 7610 items/min)
+2016-11-04 10:00:29 [scrapy] INFO: Crawled 24775 pages (at 936 pages/min), scraped 208457 items (at 7242 items/min)
+2016-11-04 10:01:29 [scrapy] INFO: Crawled 25697 pages (at 922 pages/min), scraped 215779 items (at 7322 items/min)
+2016-11-04 10:02:29 [scrapy] INFO: Crawled 26690 pages (at 993 pages/min), scraped 223656 items (at 7877 items/min)
+2016-11-04 10:03:29 [scrapy] INFO: Crawled 27656 pages (at 966 pages/min), scraped 231330 items (at 7674 items/min)
+2016-11-04 10:04:29 [scrapy] INFO: Crawled 28608 pages (at 952 pages/min), scraped 238859 items (at 7529 items/min)
+2016-11-04 10:05:29 [scrapy] INFO: Crawled 29547 pages (at 939 pages/min), scraped 246432 items (at 7573 items/min)
+2016-11-04 10:06:29 [scrapy] INFO: Crawled 30505 pages (at 958 pages/min), scraped 253998 items (at 7566 items/min)
+2016-11-04 10:07:29 [scrapy] INFO: Crawled 31464 pages (at 959 pages/min), scraped 261771 items (at 7773 items/min)
+2016-11-04 10:08:29 [scrapy] INFO: Crawled 32428 pages (at 964 pages/min), scraped 269448 items (at 7677 items/min)
+2016-11-04 10:09:29 [scrapy] INFO: Crawled 33373 pages (at 945 pages/min), scraped 277127 items (at 7679 items/min)
+2016-11-04 10:10:29 [scrapy] INFO: Crawled 34328 pages (at 955 pages/min), scraped 284867 items (at 7740 items/min)
+2016-11-04 10:11:29 [scrapy] INFO: Crawled 35276 pages (at 948 pages/min), scraped 292557 items (at 7690 items/min)
+2016-11-04 10:12:29 [scrapy] INFO: Crawled 36230 pages (at 954 pages/min), scraped 299783 items (at 7226 items/min)
+2016-11-04 10:13:29 [scrapy] INFO: Crawled 37182 pages (at 952 pages/min), scraped 306576 items (at 6793 items/min)
+2016-11-04 10:14:29 [scrapy] INFO: Crawled 38135 pages (at 953 pages/min), scraped 313269 items (at 6693 items/min)
+2016-11-04 10:15:29 [scrapy] INFO: Crawled 39092 pages (at 957 pages/min), scraped 320070 items (at 6801 items/min)
+2016-11-04 10:16:29 [scrapy] INFO: Crawled 40039 pages (at 947 pages/min), scraped 326456 items (at 6386 items/min)
+2016-11-04 10:17:29 [scrapy] INFO: Crawled 40997 pages (at 958 pages/min), scraped 333172 items (at 6716 items/min)
+2016-11-04 10:18:29 [scrapy] INFO: Crawled 41953 pages (at 956 pages/min), scraped 339837 items (at 6665 items/min)
+2016-11-04 10:19:29 [scrapy] INFO: Crawled 42907 pages (at 954 pages/min), scraped 346488 items (at 6651 items/min)
+2016-11-04 10:20:29 [scrapy] INFO: Crawled 43865 pages (at 958 pages/min), scraped 353266 items (at 6778 items/min)
+2016-11-04 10:21:29 [scrapy] INFO: Crawled 44820 pages (at 955 pages/min), scraped 360272 items (at 7006 items/min)
+2016-11-04 10:22:29 [scrapy] INFO: Crawled 45788 pages (at 968 pages/min), scraped 366866 items (at 6594 items/min)
+2016-11-04 10:23:29 [scrapy] INFO: Crawled 46745 pages (at 957 pages/min), scraped 374052 items (at 7186 items/min)
+2016-11-04 10:24:29 [scrapy] INFO: Crawled 47697 pages (at 952 pages/min), scraped 381185 items (at 7133 items/min)
+2016-11-04 10:25:29 [scrapy] INFO: Crawled 48652 pages (at 955 pages/min), scraped 388236 items (at 7051 items/min)
+2016-11-04 10:26:29 [scrapy] INFO: Crawled 49614 pages (at 962 pages/min), scraped 395236 items (at 7000 items/min)
+2016-11-04 10:27:29 [scrapy] INFO: Crawled 50558 pages (at 944 pages/min), scraped 401687 items (at 6451 items/min)
+2016-11-04 10:28:29 [scrapy] INFO: Crawled 51517 pages (at 959 pages/min), scraped 407548 items (at 5861 items/min)
+2016-11-04 10:29:29 [scrapy] INFO: Crawled 52465 pages (at 948 pages/min), scraped 412926 items (at 5378 items/min)
+2016-11-04 10:30:29 [scrapy] INFO: Crawled 53418 pages (at 953 pages/min), scraped 417367 items (at 4441 items/min)
+2016-11-04 10:31:29 [scrapy] INFO: Crawled 54371 pages (at 953 pages/min), scraped 421891 items (at 4524 items/min)
+2016-11-04 10:32:29 [scrapy] INFO: Crawled 55334 pages (at 963 pages/min), scraped 426240 items (at 4349 items/min)
+2016-11-04 10:33:29 [scrapy] INFO: Crawled 56287 pages (at 953 pages/min), scraped 430634 items (at 4394 items/min)
+2016-11-04 10:34:29 [scrapy] INFO: Crawled 57246 pages (at 959 pages/min), scraped 434804 items (at 4170 items/min)
+2016-11-04 10:35:29 [scrapy] INFO: Crawled 58201 pages (at 955 pages/min), scraped 438781 items (at 3977 items/min)
+2016-11-04 10:36:29 [scrapy] INFO: Crawled 59168 pages (at 967 pages/min), scraped 442774 items (at 3993 items/min)
+2016-11-04 10:37:29 [scrapy] INFO: Crawled 60117 pages (at 949 pages/min), scraped 446998 items (at 4224 items/min)
+2016-11-04 10:38:29 [scrapy] INFO: Crawled 61084 pages (at 967 pages/min), scraped 451176 items (at 4178 items/min)
+2016-11-04 10:39:29 [scrapy] INFO: Crawled 62053 pages (at 969 pages/min), scraped 455846 items (at 4670 items/min)
+2016-11-04 10:40:29 [scrapy] INFO: Crawled 63002 pages (at 949 pages/min), scraped 460278 items (at 4432 items/min)
+2016-11-04 10:41:29 [scrapy] INFO: Crawled 63972 pages (at 970 pages/min), scraped 464467 items (at 4189 items/min)
+2016-11-04 10:42:29 [scrapy] INFO: Crawled 64925 pages (at 953 pages/min), scraped 468733 items (at 4266 items/min)
+2016-11-04 10:43:29 [scrapy] INFO: Crawled 65895 pages (at 970 pages/min), scraped 473049 items (at 4316 items/min)
+2016-11-04 10:44:29 [scrapy] INFO: Crawled 66855 pages (at 960 pages/min), scraped 477282 items (at 4233 items/min)
+2016-11-04 10:45:29 [scrapy] INFO: Crawled 67806 pages (at 951 pages/min), scraped 481304 items (at 4022 items/min)
+2016-11-04 10:46:29 [scrapy] INFO: Crawled 68760 pages (at 954 pages/min), scraped 485073 items (at 3769 items/min)
+2016-11-04 10:47:29 [scrapy] INFO: Crawled 69720 pages (at 960 pages/min), scraped 489678 items (at 4605 items/min)
+2016-11-04 10:48:29 [scrapy] INFO: Crawled 70680 pages (at 960 pages/min), scraped 494083 items (at 4405 items/min)
+2016-11-04 10:49:29 [scrapy] INFO: Crawled 71637 pages (at 957 pages/min), scraped 498268 items (at 4185 items/min)
+2016-11-04 10:50:29 [scrapy] INFO: Crawled 72605 pages (at 968 pages/min), scraped 502171 items (at 3903 items/min)
+2016-11-04 10:51:29 [scrapy] INFO: Crawled 73573 pages (at 968 pages/min), scraped 506551 items (at 4380 items/min)
+2016-11-04 10:52:29 [scrapy] INFO: Crawled 74521 pages (at 948 pages/min), scraped 510929 items (at 4378 items/min)
+2016-11-04 10:53:29 [scrapy] INFO: Crawled 75487 pages (at 966 pages/min), scraped 515079 items (at 4150 items/min)
+2016-11-04 10:54:29 [scrapy] INFO: Crawled 76455 pages (at 968 pages/min), scraped 519649 items (at 4570 items/min)
+2016-11-04 10:55:29 [scrapy] INFO: Crawled 77422 pages (at 967 pages/min), scraped 523880 items (at 4231 items/min)
+2016-11-04 10:56:29 [scrapy] INFO: Crawled 78388 pages (at 966 pages/min), scraped 527712 items (at 3832 items/min)
+2016-11-04 10:57:01 [scrapy] ERROR: Spider error processing <GET http://weibo.cn/repost/CEpbmxUd2?uid=1657764041&rl=1&page=2> (referer: http://weibo.cn/repost/CEpbmxUd2?uid=1657764041&rl=1)
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 28, in process_spider_output
+    for x in result:
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 54, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\Passion\Desktop\SinaSpider-master\Sina_spider1\Sina_spider1\spiders\spiders.py", line 319, in parse5
+    b = str(datetime.datetime.strptime(a[0], u'%m月%d日'))[4:10]
+ValueError: day is out of range for month
+2016-11-04 10:57:29 [scrapy] INFO: Crawled 79346 pages (at 958 pages/min), scraped 531863 items (at 4151 items/min)
+2016-11-04 10:58:29 [scrapy] INFO: Crawled 80297 pages (at 951 pages/min), scraped 535777 items (at 3914 items/min)
+2016-11-04 10:59:29 [scrapy] INFO: Crawled 81252 pages (at 955 pages/min), scraped 539853 items (at 4076 items/min)
+2016-11-04 11:00:29 [scrapy] INFO: Crawled 82209 pages (at 957 pages/min), scraped 543879 items (at 4026 items/min)
+2016-11-04 11:01:29 [scrapy] INFO: Crawled 83155 pages (at 946 pages/min), scraped 548136 items (at 4257 items/min)
+2016-11-04 11:02:29 [scrapy] INFO: Crawled 84116 pages (at 961 pages/min), scraped 552252 items (at 4116 items/min)
+2016-11-04 11:03:29 [scrapy] INFO: Crawled 85077 pages (at 961 pages/min), scraped 556565 items (at 4313 items/min)
+2016-11-04 11:04:29 [scrapy] INFO: Crawled 86031 pages (at 954 pages/min), scraped 561044 items (at 4479 items/min)
+2016-11-04 11:05:29 [scrapy] INFO: Crawled 86990 pages (at 959 pages/min), scraped 565546 items (at 4502 items/min)
+2016-11-04 11:06:29 [scrapy] INFO: Crawled 87939 pages (at 949 pages/min), scraped 569982 items (at 4436 items/min)
+2016-11-04 11:07:29 [scrapy] INFO: Crawled 88882 pages (at 943 pages/min), scraped 574198 items (at 4216 items/min)
+2016-11-04 11:08:29 [scrapy] INFO: Crawled 89839 pages (at 957 pages/min), scraped 578737 items (at 4539 items/min)
+2016-11-04 11:09:29 [scrapy] INFO: Crawled 90786 pages (at 947 pages/min), scraped 582773 items (at 4036 items/min)
+2016-11-04 11:10:29 [scrapy] INFO: Crawled 91740 pages (at 954 pages/min), scraped 587324 items (at 4551 items/min)
+2016-11-04 11:11:29 [scrapy] INFO: Crawled 92684 pages (at 944 pages/min), scraped 591771 items (at 4447 items/min)
+2016-11-04 11:12:29 [scrapy] INFO: Crawled 93620 pages (at 936 pages/min), scraped 596368 items (at 4597 items/min)
+2016-11-04 11:13:22 [scrapy] ERROR: Spider error processing <GET http://weibo.cn/repost/Db5NvnEpj?uid=1762928124&rl=1&page=3> (referer: http://weibo.cn/repost/Db5NvnEpj?uid=1762928124&rl=1&page=2)
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 28, in process_spider_output
+    for x in result:
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 54, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\Passion\Desktop\SinaSpider-master\Sina_spider1\Sina_spider1\spiders\spiders.py", line 319, in parse5
+    b = str(datetime.datetime.strptime(a[0], u'%m月%d日'))[4:10]
+ValueError: day is out of range for month
+2016-11-04 11:13:29 [scrapy] INFO: Crawled 94575 pages (at 955 pages/min), scraped 601015 items (at 4647 items/min)
+2016-11-04 11:14:29 [scrapy] INFO: Crawled 95517 pages (at 942 pages/min), scraped 605825 items (at 4810 items/min)
+2016-11-04 11:15:29 [scrapy] INFO: Crawled 96478 pages (at 961 pages/min), scraped 609609 items (at 3784 items/min)
+2016-11-04 11:16:29 [scrapy] INFO: Crawled 97412 pages (at 934 pages/min), scraped 613306 items (at 3697 items/min)
+2016-11-04 11:17:29 [scrapy] INFO: Crawled 98358 pages (at 946 pages/min), scraped 617754 items (at 4448 items/min)
+2016-11-04 11:18:29 [scrapy] INFO: Crawled 99300 pages (at 942 pages/min), scraped 621997 items (at 4243 items/min)
+2016-11-04 11:19:29 [scrapy] INFO: Crawled 100243 pages (at 943 pages/min), scraped 626288 items (at 4291 items/min)
+2016-11-04 11:20:29 [scrapy] INFO: Crawled 101184 pages (at 941 pages/min), scraped 630097 items (at 3809 items/min)
+2016-11-04 11:21:29 [scrapy] INFO: Crawled 102126 pages (at 942 pages/min), scraped 634180 items (at 4083 items/min)
+2016-11-04 11:22:29 [scrapy] INFO: Crawled 103065 pages (at 939 pages/min), scraped 638112 items (at 3932 items/min)
+2016-11-04 11:23:29 [scrapy] INFO: Crawled 103999 pages (at 934 pages/min), scraped 642011 items (at 3899 items/min)
+2016-11-04 11:24:29 [scrapy] INFO: Crawled 104941 pages (at 942 pages/min), scraped 646433 items (at 4422 items/min)
+2016-11-04 11:25:29 [scrapy] INFO: Crawled 105885 pages (at 944 pages/min), scraped 650662 items (at 4229 items/min)
+2016-11-04 11:26:29 [scrapy] INFO: Crawled 106819 pages (at 934 pages/min), scraped 654626 items (at 3964 items/min)
+2016-11-04 11:27:29 [scrapy] INFO: Crawled 107756 pages (at 937 pages/min), scraped 658786 items (at 4160 items/min)
+2016-11-04 11:28:29 [scrapy] INFO: Crawled 108689 pages (at 933 pages/min), scraped 662680 items (at 3894 items/min)
+2016-11-04 11:29:29 [scrapy] INFO: Crawled 109612 pages (at 923 pages/min), scraped 666789 items (at 4109 items/min)
+2016-11-04 11:30:29 [scrapy] INFO: Crawled 110530 pages (at 918 pages/min), scraped 670901 items (at 4112 items/min)
+2016-11-04 11:31:29 [scrapy] INFO: Crawled 111469 pages (at 939 pages/min), scraped 674986 items (at 4085 items/min)
+2016-11-04 11:32:29 [scrapy] INFO: Crawled 112399 pages (at 930 pages/min), scraped 679041 items (at 4055 items/min)
+2016-11-04 11:33:29 [scrapy] INFO: Crawled 113319 pages (at 920 pages/min), scraped 683372 items (at 4331 items/min)
+2016-11-04 11:34:29 [scrapy] INFO: Crawled 114245 pages (at 926 pages/min), scraped 687330 items (at 3958 items/min)
+2016-11-04 11:35:29 [scrapy] INFO: Crawled 115167 pages (at 922 pages/min), scraped 691003 items (at 3673 items/min)
+2016-11-04 11:36:29 [scrapy] INFO: Crawled 116105 pages (at 938 pages/min), scraped 694795 items (at 3792 items/min)
+2016-11-04 11:37:29 [scrapy] INFO: Crawled 117018 pages (at 913 pages/min), scraped 698890 items (at 4095 items/min)
+2016-11-04 11:37:57 [scrapy] ERROR: Spider error processing <GET http://weibo.cn/repost/DhFza69yT?uid=1850492381&rl=1&page=2> (referer: http://weibo.cn/repost/DhFza69yT?uid=1850492381&rl=1)
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 28, in process_spider_output
+    for x in result:
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 54, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\Passion\Desktop\SinaSpider-master\Sina_spider1\Sina_spider1\spiders\spiders.py", line 319, in parse5
+    b = str(datetime.datetime.strptime(a[0], u'%m月%d日'))[4:10]
+ValueError: day is out of range for month
+2016-11-04 11:38:29 [scrapy] INFO: Crawled 117939 pages (at 921 pages/min), scraped 702892 items (at 4002 items/min)
+2016-11-04 11:39:29 [scrapy] INFO: Crawled 118870 pages (at 931 pages/min), scraped 706757 items (at 3865 items/min)
+2016-11-04 11:40:29 [scrapy] INFO: Crawled 119790 pages (at 920 pages/min), scraped 710486 items (at 3729 items/min)
+2016-11-04 11:41:29 [scrapy] INFO: Crawled 120715 pages (at 925 pages/min), scraped 714396 items (at 3910 items/min)
+2016-11-04 11:42:29 [scrapy] INFO: Crawled 121643 pages (at 928 pages/min), scraped 718155 items (at 3759 items/min)
+2016-11-04 11:43:29 [scrapy] INFO: Crawled 122558 pages (at 915 pages/min), scraped 722150 items (at 3995 items/min)
+2016-11-04 11:44:29 [scrapy] INFO: Crawled 123480 pages (at 922 pages/min), scraped 726145 items (at 3995 items/min)
+2016-11-04 11:45:29 [scrapy] INFO: Crawled 124388 pages (at 908 pages/min), scraped 730106 items (at 3961 items/min)
+2016-11-04 11:46:29 [scrapy] INFO: Crawled 125303 pages (at 915 pages/min), scraped 733908 items (at 3802 items/min)
+2016-11-04 11:47:29 [scrapy] INFO: Crawled 126214 pages (at 911 pages/min), scraped 737687 items (at 3779 items/min)
+2016-11-04 11:48:29 [scrapy] INFO: Crawled 127118 pages (at 904 pages/min), scraped 741603 items (at 3916 items/min)
+2016-11-04 11:49:29 [scrapy] INFO: Crawled 128039 pages (at 921 pages/min), scraped 745232 items (at 3629 items/min)
+2016-11-04 11:50:29 [scrapy] INFO: Crawled 128947 pages (at 908 pages/min), scraped 749192 items (at 3960 items/min)
+2016-11-04 11:51:29 [scrapy] INFO: Crawled 129856 pages (at 909 pages/min), scraped 752848 items (at 3656 items/min)
+2016-11-04 11:52:29 [scrapy] INFO: Crawled 130763 pages (at 907 pages/min), scraped 756915 items (at 4067 items/min)
+2016-11-04 11:53:29 [scrapy] INFO: Crawled 131680 pages (at 917 pages/min), scraped 761243 items (at 4328 items/min)
+2016-11-04 11:54:29 [scrapy] INFO: Crawled 132539 pages (at 859 pages/min), scraped 765175 items (at 3932 items/min)
+2016-11-04 11:55:29 [scrapy] INFO: Crawled 133405 pages (at 866 pages/min), scraped 768718 items (at 3543 items/min)
+2016-11-04 11:56:29 [scrapy] INFO: Crawled 134260 pages (at 855 pages/min), scraped 772733 items (at 4015 items/min)
+2016-11-04 11:57:29 [scrapy] INFO: Crawled 135119 pages (at 859 pages/min), scraped 776266 items (at 3533 items/min)
+2016-11-04 11:58:29 [scrapy] INFO: Crawled 135983 pages (at 864 pages/min), scraped 780163 items (at 3897 items/min)
+2016-11-04 11:59:29 [scrapy] INFO: Crawled 136822 pages (at 839 pages/min), scraped 783767 items (at 3604 items/min)
+2016-11-04 12:00:29 [scrapy] INFO: Crawled 137682 pages (at 860 pages/min), scraped 787629 items (at 3862 items/min)
+2016-11-04 12:01:29 [scrapy] INFO: Crawled 138529 pages (at 847 pages/min), scraped 792059 items (at 4430 items/min)
+2016-11-04 12:02:29 [scrapy] INFO: Crawled 139381 pages (at 852 pages/min), scraped 796058 items (at 3999 items/min)
+2016-11-04 12:03:29 [scrapy] INFO: Crawled 140227 pages (at 846 pages/min), scraped 799864 items (at 3806 items/min)
+2016-11-04 12:04:29 [scrapy] INFO: Crawled 141072 pages (at 845 pages/min), scraped 803609 items (at 3745 items/min)
+2016-11-04 12:05:29 [scrapy] INFO: Crawled 141918 pages (at 846 pages/min), scraped 807409 items (at 3800 items/min)
+2016-11-04 12:06:29 [scrapy] INFO: Crawled 142769 pages (at 851 pages/min), scraped 811543 items (at 4134 items/min)
+2016-11-04 12:07:29 [scrapy] INFO: Crawled 143615 pages (at 846 pages/min), scraped 815812 items (at 4269 items/min)
+2016-11-04 12:08:29 [scrapy] INFO: Crawled 144457 pages (at 842 pages/min), scraped 819487 items (at 3675 items/min)
+2016-11-04 12:09:29 [scrapy] INFO: Crawled 145295 pages (at 838 pages/min), scraped 823552 items (at 4065 items/min)
+2016-11-04 12:10:29 [scrapy] INFO: Crawled 146139 pages (at 844 pages/min), scraped 827447 items (at 3895 items/min)
+2016-11-04 12:11:29 [scrapy] INFO: Crawled 146972 pages (at 833 pages/min), scraped 831789 items (at 4342 items/min)
+2016-11-04 12:12:29 [scrapy] INFO: Crawled 147816 pages (at 844 pages/min), scraped 835905 items (at 4116 items/min)
+2016-11-04 12:13:29 [scrapy] INFO: Crawled 148626 pages (at 810 pages/min), scraped 840204 items (at 4299 items/min)
+2016-11-04 12:14:29 [scrapy] INFO: Crawled 149465 pages (at 839 pages/min), scraped 843775 items (at 3571 items/min)
+2016-11-04 12:15:29 [scrapy] INFO: Crawled 150287 pages (at 822 pages/min), scraped 847467 items (at 3692 items/min)
+2016-11-04 12:16:29 [scrapy] INFO: Crawled 151105 pages (at 818 pages/min), scraped 851030 items (at 3563 items/min)
+2016-11-04 12:17:29 [scrapy] INFO: Crawled 151938 pages (at 833 pages/min), scraped 854932 items (at 3902 items/min)
+2016-11-04 12:18:29 [scrapy] INFO: Crawled 152767 pages (at 829 pages/min), scraped 858542 items (at 3610 items/min)
+2016-11-04 12:19:29 [scrapy] INFO: Crawled 153584 pages (at 817 pages/min), scraped 862142 items (at 3600 items/min)
+2016-11-04 12:20:29 [scrapy] INFO: Crawled 154419 pages (at 835 pages/min), scraped 866084 items (at 3942 items/min)
+2016-11-04 12:21:29 [scrapy] INFO: Crawled 155229 pages (at 810 pages/min), scraped 869848 items (at 3764 items/min)
+2016-11-04 12:22:29 [scrapy] INFO: Crawled 156008 pages (at 779 pages/min), scraped 873401 items (at 3553 items/min)
+2016-11-04 12:23:29 [scrapy] INFO: Crawled 156824 pages (at 816 pages/min), scraped 876835 items (at 3434 items/min)
+2016-11-04 12:24:29 [scrapy] INFO: Crawled 157699 pages (at 875 pages/min), scraped 880362 items (at 3527 items/min)
+2016-11-04 12:25:29 [scrapy] INFO: Crawled 158567 pages (at 868 pages/min), scraped 884191 items (at 3829 items/min)
+2016-11-04 12:26:29 [scrapy] INFO: Crawled 159425 pages (at 858 pages/min), scraped 887633 items (at 3442 items/min)
+2016-11-04 12:27:29 [scrapy] INFO: Crawled 160287 pages (at 862 pages/min), scraped 891006 items (at 3373 items/min)
+2016-11-04 12:28:29 [scrapy] INFO: Crawled 161157 pages (at 870 pages/min), scraped 894654 items (at 3648 items/min)
+2016-11-04 12:29:29 [scrapy] INFO: Crawled 162033 pages (at 876 pages/min), scraped 898474 items (at 3820 items/min)
+2016-11-04 12:30:29 [scrapy] INFO: Crawled 162876 pages (at 843 pages/min), scraped 901943 items (at 3469 items/min)
+2016-11-04 12:31:29 [scrapy] INFO: Crawled 163742 pages (at 866 pages/min), scraped 905558 items (at 3615 items/min)
+2016-11-04 12:32:29 [scrapy] INFO: Crawled 164611 pages (at 869 pages/min), scraped 909486 items (at 3928 items/min)
+2016-11-04 12:33:29 [scrapy] INFO: Crawled 165477 pages (at 866 pages/min), scraped 913438 items (at 3952 items/min)
+2016-11-04 12:34:29 [scrapy] INFO: Crawled 166320 pages (at 843 pages/min), scraped 917152 items (at 3714 items/min)
+2016-11-04 12:35:29 [scrapy] INFO: Crawled 167169 pages (at 849 pages/min), scraped 920487 items (at 3335 items/min)
+2016-11-04 12:36:29 [scrapy] INFO: Crawled 168035 pages (at 866 pages/min), scraped 923916 items (at 3429 items/min)
+2016-11-04 12:36:44 [scrapy] ERROR: Spider error processing <GET http://weibo.cn/repost/DgCnE3JYB?uid=5466307917&rl=1> (referer: http://weibo.cn/5466307917/profile?filter=0&page=1)
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 28, in process_spider_output
+    for x in result:
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 54, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\Passion\Desktop\SinaSpider-master\Sina_spider1\Sina_spider1\spiders\spiders.py", line 319, in parse5
+    b = str(datetime.datetime.strptime(a[0], u'%m月%d日'))[4:10]
+ValueError: day is out of range for month
+2016-11-04 12:37:29 [scrapy] INFO: Crawled 168882 pages (at 847 pages/min), scraped 927357 items (at 3441 items/min)
+2016-11-04 12:38:29 [scrapy] INFO: Crawled 169737 pages (at 855 pages/min), scraped 930726 items (at 3369 items/min)
+2016-11-04 12:38:59 [scrapy] ERROR: Spider error processing <GET http://weibo.cn/2373003121/profile?filter=0&page=1> (referer: None)
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 28, in process_spider_output
+    for x in result:
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 54, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\Passion\Desktop\SinaSpider-master\Sina_spider1\Sina_spider1\spiders\spiders.py", line 181, in parse2
+    b = str(datetime.datetime.strptime(a[0], u'%m月%d日'))[4:10]
+ValueError: day is out of range for month
+2016-11-04 12:39:29 [scrapy] INFO: Crawled 170586 pages (at 849 pages/min), scraped 934284 items (at 3558 items/min)
+2016-11-04 12:40:29 [scrapy] INFO: Crawled 171432 pages (at 846 pages/min), scraped 937690 items (at 3406 items/min)
+2016-11-04 12:41:29 [scrapy] INFO: Crawled 172266 pages (at 834 pages/min), scraped 941079 items (at 3389 items/min)
+2016-11-04 12:42:29 [scrapy] INFO: Crawled 173114 pages (at 848 pages/min), scraped 944339 items (at 3260 items/min)
+2016-11-04 12:43:29 [scrapy] INFO: Crawled 173959 pages (at 845 pages/min), scraped 947747 items (at 3408 items/min)
+2016-11-04 12:44:29 [scrapy] INFO: Crawled 174796 pages (at 837 pages/min), scraped 951321 items (at 3574 items/min)
+2016-11-04 12:45:29 [scrapy] INFO: Crawled 175629 pages (at 833 pages/min), scraped 954972 items (at 3651 items/min)
+2016-11-04 12:46:29 [scrapy] INFO: Crawled 176455 pages (at 826 pages/min), scraped 958555 items (at 3583 items/min)
+2016-11-04 12:47:29 [scrapy] INFO: Crawled 177299 pages (at 844 pages/min), scraped 961999 items (at 3444 items/min)
+2016-11-04 12:48:29 [scrapy] INFO: Crawled 178132 pages (at 833 pages/min), scraped 965709 items (at 3710 items/min)
+2016-11-04 12:49:29 [scrapy] INFO: Crawled 178946 pages (at 814 pages/min), scraped 969289 items (at 3580 items/min)
+2016-11-04 12:50:29 [scrapy] INFO: Crawled 179765 pages (at 819 pages/min), scraped 973076 items (at 3787 items/min)
+2016-11-04 12:51:29 [scrapy] INFO: Crawled 180582 pages (at 817 pages/min), scraped 976912 items (at 3836 items/min)
+2016-11-04 12:52:29 [scrapy] INFO: Crawled 181407 pages (at 825 pages/min), scraped 980828 items (at 3916 items/min)
+2016-11-04 12:53:29 [scrapy] INFO: Crawled 182215 pages (at 808 pages/min), scraped 984506 items (at 3678 items/min)
+2016-11-04 12:54:29 [scrapy] INFO: Crawled 183048 pages (at 833 pages/min), scraped 988202 items (at 3696 items/min)
+2016-11-04 12:55:29 [scrapy] INFO: Crawled 183873 pages (at 825 pages/min), scraped 991458 items (at 3256 items/min)
+2016-11-04 12:56:29 [scrapy] INFO: Crawled 184703 pages (at 830 pages/min), scraped 995066 items (at 3608 items/min)
+2016-11-04 12:57:29 [scrapy] INFO: Crawled 185539 pages (at 836 pages/min), scraped 998503 items (at 3437 items/min)
+2016-11-04 12:58:29 [scrapy] INFO: Crawled 186356 pages (at 817 pages/min), scraped 1001607 items (at 3104 items/min)
+2016-11-04 12:59:29 [scrapy] INFO: Crawled 187189 pages (at 833 pages/min), scraped 1005192 items (at 3585 items/min)
+2016-11-04 13:00:29 [scrapy] INFO: Crawled 188010 pages (at 821 pages/min), scraped 1008693 items (at 3501 items/min)
+2016-11-04 13:01:29 [scrapy] INFO: Crawled 188779 pages (at 769 pages/min), scraped 1012405 items (at 3712 items/min)
+2016-11-04 13:02:29 [scrapy] INFO: Crawled 189618 pages (at 839 pages/min), scraped 1016248 items (at 3843 items/min)
+2016-11-04 13:03:29 [scrapy] INFO: Crawled 190438 pages (at 820 pages/min), scraped 1020696 items (at 4448 items/min)
+2016-11-04 13:04:29 [scrapy] INFO: Crawled 191243 pages (at 805 pages/min), scraped 1024813 items (at 4117 items/min)
+2016-11-04 13:05:29 [scrapy] INFO: Crawled 192070 pages (at 827 pages/min), scraped 1028927 items (at 4114 items/min)
+2016-11-04 13:06:29 [scrapy] INFO: Crawled 192897 pages (at 827 pages/min), scraped 1032852 items (at 3925 items/min)
+2016-11-04 13:07:29 [scrapy] INFO: Crawled 193714 pages (at 817 pages/min), scraped 1036310 items (at 3458 items/min)
+2016-11-04 13:08:29 [scrapy] INFO: Crawled 194523 pages (at 809 pages/min), scraped 1040079 items (at 3769 items/min)
+2016-11-04 13:09:29 [scrapy] INFO: Crawled 195339 pages (at 816 pages/min), scraped 1043847 items (at 3768 items/min)
+2016-11-04 13:10:29 [scrapy] INFO: Crawled 196144 pages (at 805 pages/min), scraped 1047627 items (at 3780 items/min)
+2016-11-04 13:11:29 [scrapy] INFO: Crawled 196948 pages (at 804 pages/min), scraped 1051578 items (at 3951 items/min)
+2016-11-04 13:12:29 [scrapy] INFO: Crawled 197761 pages (at 813 pages/min), scraped 1055434 items (at 3856 items/min)
+2016-11-04 13:13:29 [scrapy] INFO: Crawled 198577 pages (at 816 pages/min), scraped 1059248 items (at 3814 items/min)
+2016-11-04 13:14:29 [scrapy] INFO: Crawled 199389 pages (at 812 pages/min), scraped 1063191 items (at 3943 items/min)
+2016-11-04 13:15:29 [scrapy] INFO: Crawled 200191 pages (at 802 pages/min), scraped 1066939 items (at 3748 items/min)
+2016-11-04 13:16:29 [scrapy] INFO: Crawled 200993 pages (at 802 pages/min), scraped 1070628 items (at 3689 items/min)
+2016-11-04 13:17:29 [scrapy] INFO: Crawled 201774 pages (at 781 pages/min), scraped 1074447 items (at 3819 items/min)
+2016-11-04 13:18:29 [scrapy] INFO: Crawled 202573 pages (at 799 pages/min), scraped 1078277 items (at 3830 items/min)
+2016-11-04 13:19:29 [scrapy] INFO: Crawled 203396 pages (at 823 pages/min), scraped 1081937 items (at 3660 items/min)
+2016-11-04 13:20:29 [scrapy] INFO: Crawled 204205 pages (at 809 pages/min), scraped 1085725 items (at 3788 items/min)
+2016-11-04 13:21:29 [scrapy] INFO: Crawled 204997 pages (at 792 pages/min), scraped 1089455 items (at 3730 items/min)
+2016-11-04 13:22:29 [scrapy] INFO: Crawled 205796 pages (at 799 pages/min), scraped 1093434 items (at 3979 items/min)
+2016-11-04 13:23:29 [scrapy] INFO: Crawled 206601 pages (at 805 pages/min), scraped 1097240 items (at 3806 items/min)
+2016-11-04 13:24:29 [scrapy] INFO: Crawled 207416 pages (at 815 pages/min), scraped 1101012 items (at 3772 items/min)
+2016-11-04 13:24:48 [scrapy] ERROR: Spider error processing <GET http://weibo.cn/repost/CAO77v0SF?uid=1032347637&rl=1&page=4> (referer: http://weibo.cn/repost/CAO77v0SF?uid=1032347637&rl=1&page=3)
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 28, in process_spider_output
+    for x in result:
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 54, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\Passion\Desktop\SinaSpider-master\Sina_spider1\Sina_spider1\spiders\spiders.py", line 319, in parse5
+    b = str(datetime.datetime.strptime(a[0], u'%m月%d日'))[4:10]
+ValueError: day is out of range for month
+2016-11-04 13:25:29 [scrapy] INFO: Crawled 208226 pages (at 810 pages/min), scraped 1104740 items (at 3728 items/min)
+2016-11-04 13:26:29 [scrapy] INFO: Crawled 209022 pages (at 796 pages/min), scraped 1108558 items (at 3818 items/min)
+2016-11-04 13:27:29 [scrapy] INFO: Crawled 209819 pages (at 797 pages/min), scraped 1112108 items (at 3550 items/min)
+2016-11-04 13:28:29 [scrapy] INFO: Crawled 210597 pages (at 778 pages/min), scraped 1115649 items (at 3541 items/min)
+2016-11-04 13:29:29 [scrapy] INFO: Crawled 211398 pages (at 801 pages/min), scraped 1119690 items (at 4041 items/min)
+2016-11-04 13:30:29 [scrapy] INFO: Crawled 212197 pages (at 799 pages/min), scraped 1123785 items (at 4095 items/min)
+2016-11-04 13:31:26 [scrapy] ERROR: Spider error processing <GET http://weibo.cn/1460476223/profile?filter=0&page=1> (referer: None)
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 28, in process_spider_output
+    for x in result:
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 54, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\Passion\Desktop\SinaSpider-master\Sina_spider1\Sina_spider1\spiders\spiders.py", line 181, in parse2
+    b = str(datetime.datetime.strptime(a[0], u'%m月%d日'))[4:10]
+ValueError: day is out of range for month
+2016-11-04 13:31:29 [scrapy] INFO: Crawled 212983 pages (at 786 pages/min), scraped 1127605 items (at 3820 items/min)
+2016-11-04 13:32:29 [scrapy] INFO: Crawled 213770 pages (at 787 pages/min), scraped 1131145 items (at 3540 items/min)
+2016-11-04 13:33:29 [scrapy] INFO: Crawled 214572 pages (at 802 pages/min), scraped 1134826 items (at 3681 items/min)
+2016-11-04 13:34:29 [scrapy] INFO: Crawled 215349 pages (at 777 pages/min), scraped 1138340 items (at 3514 items/min)
+2016-11-04 13:35:29 [scrapy] INFO: Crawled 216152 pages (at 803 pages/min), scraped 1142423 items (at 4083 items/min)
+2016-11-04 13:36:29 [scrapy] INFO: Crawled 216946 pages (at 794 pages/min), scraped 1146370 items (at 3947 items/min)
+2016-11-04 13:37:29 [scrapy] INFO: Crawled 217733 pages (at 787 pages/min), scraped 1149871 items (at 3501 items/min)
+2016-11-04 13:38:29 [scrapy] INFO: Crawled 218516 pages (at 783 pages/min), scraped 1153345 items (at 3474 items/min)
+2016-11-04 13:39:29 [scrapy] INFO: Crawled 219291 pages (at 775 pages/min), scraped 1156782 items (at 3437 items/min)
+2016-11-04 13:40:29 [scrapy] INFO: Crawled 220089 pages (at 798 pages/min), scraped 1160334 items (at 3552 items/min)
+2016-11-04 13:41:08 [scrapy] ERROR: Spider error processing <GET http://weibo.cn/3483073772/profile?filter=0&page=1> (referer: None)
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 28, in process_spider_output
+    for x in result:
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 54, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\Passion\Desktop\SinaSpider-master\Sina_spider1\Sina_spider1\spiders\spiders.py", line 181, in parse2
+    b = str(datetime.datetime.strptime(a[0], u'%m月%d日'))[4:10]
+ValueError: day is out of range for month
+2016-11-04 13:41:29 [scrapy] INFO: Crawled 220862 pages (at 773 pages/min), scraped 1163859 items (at 3525 items/min)
+2016-11-04 13:42:29 [scrapy] INFO: Crawled 221644 pages (at 782 pages/min), scraped 1167460 items (at 3601 items/min)
+2016-11-04 13:43:29 [scrapy] INFO: Crawled 222410 pages (at 766 pages/min), scraped 1170754 items (at 3294 items/min)
+2016-11-04 13:44:29 [scrapy] INFO: Crawled 223193 pages (at 783 pages/min), scraped 1174329 items (at 3575 items/min)
+2016-11-04 13:45:29 [scrapy] INFO: Crawled 223984 pages (at 791 pages/min), scraped 1177773 items (at 3444 items/min)
+2016-11-04 13:46:29 [scrapy] INFO: Crawled 224765 pages (at 781 pages/min), scraped 1181514 items (at 3741 items/min)
+2016-11-04 13:47:29 [scrapy] INFO: Crawled 225538 pages (at 773 pages/min), scraped 1184855 items (at 3341 items/min)
+2016-11-04 13:48:29 [scrapy] INFO: Crawled 226311 pages (at 773 pages/min), scraped 1188200 items (at 3345 items/min)
+2016-11-04 13:49:29 [scrapy] INFO: Crawled 227089 pages (at 778 pages/min), scraped 1192128 items (at 3928 items/min)
+2016-11-04 13:50:29 [scrapy] INFO: Crawled 227865 pages (at 776 pages/min), scraped 1195930 items (at 3802 items/min)
+2016-11-04 13:51:29 [scrapy] INFO: Crawled 228639 pages (at 774 pages/min), scraped 1199552 items (at 3622 items/min)
+2016-11-04 13:52:29 [scrapy] INFO: Crawled 229414 pages (at 775 pages/min), scraped 1203451 items (at 3899 items/min)
+2016-11-04 13:53:29 [scrapy] INFO: Crawled 230174 pages (at 760 pages/min), scraped 1206998 items (at 3547 items/min)
+2016-11-04 13:54:29 [scrapy] INFO: Crawled 230938 pages (at 764 pages/min), scraped 1210759 items (at 3761 items/min)
+2016-11-04 13:55:29 [scrapy] INFO: Crawled 231716 pages (at 778 pages/min), scraped 1214456 items (at 3697 items/min)
+2016-11-04 13:56:29 [scrapy] INFO: Crawled 232494 pages (at 778 pages/min), scraped 1218190 items (at 3734 items/min)
+2016-11-04 13:57:29 [scrapy] INFO: Crawled 233260 pages (at 766 pages/min), scraped 1221857 items (at 3667 items/min)
+2016-11-04 13:58:29 [scrapy] INFO: Crawled 234021 pages (at 761 pages/min), scraped 1225558 items (at 3701 items/min)
+2016-11-04 13:59:29 [scrapy] INFO: Crawled 234791 pages (at 770 pages/min), scraped 1229099 items (at 3541 items/min)
+2016-11-04 14:00:29 [scrapy] INFO: Crawled 235548 pages (at 757 pages/min), scraped 1233620 items (at 4521 items/min)
+2016-11-04 14:01:29 [scrapy] INFO: Crawled 236299 pages (at 751 pages/min), scraped 1239647 items (at 6027 items/min)
+2016-11-04 14:02:29 [scrapy] INFO: Crawled 237059 pages (at 760 pages/min), scraped 1245937 items (at 6290 items/min)
+2016-11-04 14:03:29 [scrapy] INFO: Crawled 237809 pages (at 750 pages/min), scraped 1252188 items (at 6251 items/min)
+2016-11-04 14:04:29 [scrapy] INFO: Crawled 238549 pages (at 740 pages/min), scraped 1258381 items (at 6193 items/min)
+2016-11-04 14:05:29 [scrapy] INFO: Crawled 239310 pages (at 761 pages/min), scraped 1264944 items (at 6563 items/min)
+2016-11-04 14:06:29 [scrapy] INFO: Crawled 240050 pages (at 740 pages/min), scraped 1271156 items (at 6212 items/min)
+2016-11-04 14:07:29 [scrapy] INFO: Crawled 240802 pages (at 752 pages/min), scraped 1277630 items (at 6474 items/min)
+2016-11-04 14:08:29 [scrapy] INFO: Crawled 241559 pages (at 757 pages/min), scraped 1284101 items (at 6471 items/min)
+2016-11-04 14:09:29 [scrapy] INFO: Crawled 242321 pages (at 762 pages/min), scraped 1290612 items (at 6511 items/min)
+2016-11-04 14:09:48 [scrapy] ERROR: Spider error processing <GET http://weibo.cn/repost/CfzJSpcOZ?uid=1445818364&rl=1&page=18> (referer: http://weibo.cn/repost/CfzJSpcOZ?uid=1445818364&rl=1&page=17)
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 28, in process_spider_output
+    for x in result:
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 54, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\Passion\Desktop\SinaSpider-master\Sina_spider1\Sina_spider1\spiders\spiders.py", line 319, in parse5
+    b = str(datetime.datetime.strptime(a[0], u'%m月%d日'))[4:10]
+ValueError: day is out of range for month
+2016-11-04 14:10:29 [scrapy] INFO: Crawled 243056 pages (at 735 pages/min), scraped 1296782 items (at 6170 items/min)
+2016-11-04 14:11:29 [scrapy] INFO: Crawled 243804 pages (at 748 pages/min), scraped 1302981 items (at 6199 items/min)
+2016-11-04 14:12:29 [scrapy] INFO: Crawled 244543 pages (at 739 pages/min), scraped 1308849 items (at 5868 items/min)
+2016-11-04 14:13:29 [scrapy] INFO: Crawled 245300 pages (at 757 pages/min), scraped 1314930 items (at 6081 items/min)
+2016-11-04 14:14:29 [scrapy] INFO: Crawled 246023 pages (at 723 pages/min), scraped 1320836 items (at 5906 items/min)
+2016-11-04 14:15:29 [scrapy] INFO: Crawled 246784 pages (at 761 pages/min), scraped 1327102 items (at 6266 items/min)
+2016-11-04 14:16:29 [scrapy] INFO: Crawled 247534 pages (at 750 pages/min), scraped 1333205 items (at 6103 items/min)
+2016-11-04 14:17:29 [scrapy] INFO: Crawled 248284 pages (at 750 pages/min), scraped 1339255 items (at 6050 items/min)
+2016-11-04 14:18:29 [scrapy] INFO: Crawled 249041 pages (at 757 pages/min), scraped 1345367 items (at 6112 items/min)
+2016-11-04 14:19:29 [scrapy] INFO: Crawled 249781 pages (at 740 pages/min), scraped 1351259 items (at 5892 items/min)
+2016-11-04 14:20:29 [scrapy] INFO: Crawled 250533 pages (at 752 pages/min), scraped 1357232 items (at 5973 items/min)
+2016-11-04 14:21:29 [scrapy] INFO: Crawled 251293 pages (at 760 pages/min), scraped 1362766 items (at 5534 items/min)
+2016-11-04 14:22:29 [scrapy] INFO: Crawled 252060 pages (at 767 pages/min), scraped 1368584 items (at 5818 items/min)
+2016-11-04 14:23:29 [scrapy] INFO: Crawled 252811 pages (at 751 pages/min), scraped 1374099 items (at 5515 items/min)
+2016-11-04 14:23:50 [scrapy] ERROR: Spider error processing <GET http://weibo.cn/repost/CC4tk5D8v?uid=1617566333&rl=1&page=3> (referer: http://weibo.cn/repost/CC4tk5D8v?uid=1617566333&rl=1&page=2)
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 28, in process_spider_output
+    for x in result:
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 54, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\Passion\Desktop\SinaSpider-master\Sina_spider1\Sina_spider1\spiders\spiders.py", line 319, in parse5
+    b = str(datetime.datetime.strptime(a[0], u'%m月%d日'))[4:10]
+ValueError: day is out of range for month
+2016-11-04 14:24:29 [scrapy] INFO: Crawled 253564 pages (at 753 pages/min), scraped 1379489 items (at 5390 items/min)
+2016-11-04 14:25:29 [scrapy] INFO: Crawled 254322 pages (at 758 pages/min), scraped 1384427 items (at 4938 items/min)
+2016-11-04 14:26:29 [scrapy] INFO: Crawled 255065 pages (at 743 pages/min), scraped 1389339 items (at 4912 items/min)
+2016-11-04 14:27:29 [scrapy] INFO: Crawled 255814 pages (at 749 pages/min), scraped 1394129 items (at 4790 items/min)
+2016-11-04 14:28:29 [scrapy] INFO: Crawled 256575 pages (at 761 pages/min), scraped 1399064 items (at 4935 items/min)
+2016-11-04 14:29:29 [scrapy] INFO: Crawled 257337 pages (at 762 pages/min), scraped 1404164 items (at 5100 items/min)
+2016-11-04 14:30:29 [scrapy] INFO: Crawled 258102 pages (at 765 pages/min), scraped 1408785 items (at 4621 items/min)
+2016-11-04 14:31:29 [scrapy] INFO: Crawled 258854 pages (at 752 pages/min), scraped 1413734 items (at 4949 items/min)
+2016-11-04 14:32:29 [scrapy] INFO: Crawled 259582 pages (at 728 pages/min), scraped 1418954 items (at 5220 items/min)
+2016-11-04 14:33:29 [scrapy] INFO: Crawled 260273 pages (at 691 pages/min), scraped 1424046 items (at 5092 items/min)
+2016-11-04 14:34:29 [scrapy] INFO: Crawled 260958 pages (at 685 pages/min), scraped 1429076 items (at 5030 items/min)
+2016-11-04 14:35:29 [scrapy] INFO: Crawled 261658 pages (at 700 pages/min), scraped 1433743 items (at 4667 items/min)
+2016-11-04 14:36:29 [scrapy] INFO: Crawled 262368 pages (at 710 pages/min), scraped 1437819 items (at 4076 items/min)
+2016-11-04 14:37:29 [scrapy] INFO: Crawled 263097 pages (at 729 pages/min), scraped 1441850 items (at 4031 items/min)
+2016-11-04 14:38:29 [scrapy] INFO: Crawled 263816 pages (at 719 pages/min), scraped 1445088 items (at 3238 items/min)
+2016-11-04 14:39:29 [scrapy] INFO: Crawled 264542 pages (at 726 pages/min), scraped 1448139 items (at 3051 items/min)
+2016-11-04 14:40:29 [scrapy] INFO: Crawled 265267 pages (at 725 pages/min), scraped 1451160 items (at 3021 items/min)
+2016-11-04 14:41:27 [scrapy] ERROR: Error while obtaining start requests
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\scrapy\core\engine.py", line 111, in _next_request
+    request = next(slot.start_requests)
+  File "C:\Users\Passion\Desktop\SinaSpider-master\Sina_spider1\Sina_spider1\spiders\spiders.py", line 33, in start_requests
+    ID = self.scrawl_ID.pop()
+KeyError: 'pop from an empty set'
+2016-11-04 14:41:29 [scrapy] INFO: Crawled 266001 pages (at 734 pages/min), scraped 1454211 items (at 3051 items/min)
+2016-11-04 14:42:29 [scrapy] INFO: Crawled 266681 pages (at 680 pages/min), scraped 1457165 items (at 2954 items/min)
+2016-11-04 14:43:29 [scrapy] INFO: Crawled 267392 pages (at 711 pages/min), scraped 1460282 items (at 3117 items/min)
+2016-11-04 14:44:29 [scrapy] INFO: Crawled 268099 pages (at 707 pages/min), scraped 1463539 items (at 3257 items/min)
+2016-11-04 14:45:29 [scrapy] INFO: Crawled 268839 pages (at 740 pages/min), scraped 1466976 items (at 3437 items/min)
+2016-11-04 14:46:09 [scrapy] INFO: Closing spider (finished)
+2016-11-04 14:46:09 [scrapy] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 393819613,
+ 'downloader/request_count': 269467,
+ 'downloader/request_method_count/GET': 269467,
+ 'downloader/response_bytes': 722450235,
+ 'downloader/response_count': 269467,
+ 'downloader/response_status_count/200': 194645,
+ 'downloader/response_status_count/403': 74822,
+ 'dupefilter/filtered': 360,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2016, 11, 4, 6, 46, 9, 459000),
+ 'item_scraped_count': 1469442,
+ 'log_count/ERROR': 11,
+ 'log_count/INFO': 343,
+ 'request_depth_max': 120,
+ 'response_received_count': 269328,
+ 'scheduler/dequeued': 269467,
+ 'scheduler/dequeued/memory': 269467,
+ 'scheduler/enqueued': 269467,
+ 'scheduler/enqueued/memory': 269467,
+ 'spider_exceptions/ValueError': 10,
+ 'start_time': datetime.datetime(2016, 11, 4, 1, 34, 29, 448000)}
+2016-11-04 14:46:09 [scrapy] INFO: Spider closed (finished)

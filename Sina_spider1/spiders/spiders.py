@@ -45,7 +45,7 @@ class Spider(CrawlSpider):
 
             url_follows = "http://weibo.cn/%s/follow" % ID
             url_fans = "http://weibo.cn/%s/fans" % ID
-            url_tweets = "http://weibo.cn/%s/profile?filter=0&page=1" % ID
+            url_tweets = "http://weibo.cn/%s/profile?filter=1&page=1" % ID
             url_information0 = "http://weibo.cn/attgroup/opening?uid=%s" % ID
             # yield Request(url=url_follows, meta={"item": followsItems, "result": follows},
             #               callback=self.parse3)  # 去爬关注人
@@ -195,7 +195,7 @@ class Spider(CrawlSpider):
                 days_ago = (today1 - sta_time).days
                 if tweetsItems['Content'].find(u'置顶') != -1:
                     pass
-                elif days_ago > 3:
+                elif days_ago > 5:
                     return
             if link_comment and tweetsItems["Comment"] > 0:
                 yield Request(url=link_comment, meta={"ID": tweetsItems['_id'], 'num': 0}, callback=self.parse4)
@@ -316,15 +316,18 @@ class Spider(CrawlSpider):
 
                     elif others[0][2] == u'月' or others[0][3] == u'月':
                         a = others[0].split()
-                        b = str(datetime.datetime.strptime(a[0], u'%m月%d日'))[4:10]
-                        others[0] = year + b + ' ' + a[1]
-
+                        try:
+                            b = str(datetime.datetime.strptime(year+u'年'+a[0], u'%Y年%m月%d日'))[:10]
+                            others[0] = b + ' ' + a[1]
+                        except:
+                            print(a[0])
                     repostItem["PubTime"] = others[0]
                     if len(others) == 2:
                         repostItem["Tools"] = others[1]
                     yield repostItem
         url_next = selector.xpath(
             u'body/div[@class="pa" and @id="pagelist"]/form/div/a[text()="\u4e0b\u9875"]/@href').extract()
-        if url_next and id < 200:
+        if url_next:
+                # and id < 200:
             yield Request(url=self.host + url_next[0], meta={"ID": response.meta["ID"], 'num': id}, callback=self.parse5)
 
