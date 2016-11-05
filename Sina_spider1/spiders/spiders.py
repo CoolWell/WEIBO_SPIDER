@@ -178,8 +178,11 @@ class Spider(CrawlSpider):
 
                 elif others[0][1] == u'月' or others[0][2] == u'月':
                     a = others[0].split()
-                    b = str(datetime.datetime.strptime(a[0], u'%m月%d日'))[4:10]
-                    others[0] = year + b + ' ' + a[1]
+                    try:
+                        b = str(datetime.datetime.strptime(year+u'年'+a[0], u'%Y年%m月%d日'))[:10]
+                        others[0] = b + ' ' + a[1]
+                    except:
+                        print(a[0])
 
 
                 tweetsItems["PubTime"] = others[0]
