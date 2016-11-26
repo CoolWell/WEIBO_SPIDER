@@ -6,8 +6,9 @@ from scrapy.selector import Selector
 from scrapy.http import Request
 from Sina_spider1.items import InformationItem, TweetsItem, FollowsItem, FansItem, CommentItem, RepostItem
 import sys
+
 reload(sys)
-sys.setdefaultencoding('utf-8')
+sys.setdefaultencoding('utf-8')     # python系统默认解码编码
 
 class Spider(CrawlSpider):
     name = "sinaSpider"
@@ -166,9 +167,9 @@ class Spider(CrawlSpider):
             if like:
                 tweetsItems["Like"] = int(like[-1])
             if transfer:
-                tweetsItems["Transfer"] = int(transfer[-1])
+                tweetsItems["TransferNum"] = int(transfer[-1])
             if comment:
-                tweetsItems["Comment"] = int(comment[-1])
+                tweetsItems["CommentNum"] = int(comment[-1])
 
             if others:
                 others = others.split(u"\u6765\u81ea")
@@ -197,12 +198,12 @@ class Spider(CrawlSpider):
                 today1 = datetime.datetime.today()
                 days_ago = (today1 - sta_time).days
                 if tweetsItems['Content'].find(u'置顶') != -1:
-                    pass
-                elif days_ago > 5:
                     return
-            if link_comment and tweetsItems["Comment"] > 0:
+                elif days_ago > 3:
+                    return
+            if link_comment and tweetsItems["CommentNum"] > 0:
                 yield Request(url=link_comment, meta={"ID": tweetsItems['_id'], 'num': 0}, callback=self.parse4)
-            if link_repost and tweetsItems['Transfer'] > 0:
+            if link_repost and tweetsItems['TransferNum'] > 0:
                 yield Request(url=link_repost, meta={"ID": tweetsItems['_id'], 'num': 0}, callback=self.parse5)
             yield tweetsItems
 
@@ -253,7 +254,8 @@ class Spider(CrawlSpider):
             id = comment.xpath('@id').extract_first()
             name = comment.xpath('a[1]/text()').extract_first()
             homepage = comment.xpath('a[1]/@href').extract_first()
-            content = comment.xpath('string(.)').extract()
+            content = comment.xpath('.//text()').extract()
+            # content = comment.xpath('string(.)').extract()
             like = re.findall(u'\u8d5e\[(\d+)\]', comment.extract())  # 点赞数
             others = comment.xpath('span[@class="ct"]').xpath('string(.)').extract_first()  # 求时间和使用工具（手机或平台）
 
@@ -261,7 +263,7 @@ class Spider(CrawlSpider):
             commentItem["_id"] = commentItem["ID"] + "-" + id
             commentItem['Name'] = name
             commentItem['Homepage'] = homepage
-            commentItem['Content'] = ''.join(content).replace(u'&nbsp;', '')
+            commentItem['Content'] = ''.join(content[:-8]).replace(u'&nbsp;', '')
             if like:
                 commentItem['Like'] = int(like[0])
             if others:
@@ -281,7 +283,7 @@ class Spider(CrawlSpider):
                 commentItem["PubTime"] = others[0]
                 if len(others) == 2:
                     commentItem["Tools"] = others[1]
-                yield commentItem
+            yield commentItem
         url_next = selector.xpath(
             u'body/div[@class="pa" and @id="pagelist"]/form/div/a[text()="\u4e0b\u9875"]/@href').extract()
         if url_next and num < 20:
@@ -299,7 +301,8 @@ class Spider(CrawlSpider):
                 id = id+1
                 name = repost.xpath('a[1]/text()').extract_first()
                 homepage = repost.xpath('a[1]/@href').extract_first()
-                content = repost.xpath('string(.)').extract()
+                content = repost.xpath('.//text()').extract()
+                # content = repost.xpath('string(.)').extract()
                 like = re.findall(u'\u8d5e\[(\d+)\]', repost.extract())  # 点赞数
                 others = repost.xpath('span[@class="ct"]').xpath('string(.)').extract_first()  # 求时间和使用工具（手机或平台）
 
@@ -307,7 +310,7 @@ class Spider(CrawlSpider):
                 repostItem["_id"] = repostItem["ID"] + "-" + str(id)
                 repostItem['Name'] = name
                 repostItem['Homepage'] = homepage
-                repostItem['Content'] = ''.join(content).replace(u'&nbsp;', '')
+                repostItem['Content'] = ''.join(content[:-2]).replace(u'&nbsp;', '')
                 if like:
                     repostItem['Like'] = int(like[0])
                 if others:
@@ -327,10 +330,11 @@ class Spider(CrawlSpider):
                     repostItem["PubTime"] = others[0]
                     if len(others) == 2:
                         repostItem["Tools"] = others[1]
-                    yield repostItem
+                yield repostItem
         url_next = selector.xpath(
             u'body/div[@class="pa" and @id="pagelist"]/form/div/a[text()="\u4e0b\u9875"]/@href').extract()
         if url_next:
                 # and id < 200:
             yield Request(url=self.host + url_next[0], meta={"ID": response.meta["ID"], 'num': id}, callback=self.parse5)
+
 

@@ -6,8 +6,11 @@ import datetime
 class MongoDBPipleline(object):
     def __init__(self):
         today = str(datetime.date.today())
-        clinet = pymongo.MongoClient("localhost", 27017)
-        db = clinet["Sina"]
+        addresses = ['223.3.77.26:20000', '223.3.83.196:20000', '223.3.90.150:20000']
+        clinet = pymongo.MongoClient(addresses)
+
+        # clinet = pymongo.MongoClient("223.3.77.26", 20000)
+        db = clinet["Sina_test"]
         self.Information = db["Information-"+today]
         self.Tweets = db["Tweets-"+today]
         self.Follows = db["Follows-"+today]
@@ -40,18 +43,18 @@ class MongoDBPipleline(object):
                 pass
         elif isinstance(item, FollowsItem):
             followsItems = dict(item)
-            follows = followsItems.pop("follows")
-            for i in range(len(follows)):
-                followsItems[str(i + 1)] = follows[i]
+            # follows = followsItems.pop("follows")
+            # for i in range(len(follows)):
+            #     followsItems[str(i + 1)] = follows[i]
             try:
                 self.Follows.insert(followsItems)
             except Exception:
                 pass
         elif isinstance(item, FansItem):
             fansItems = dict(item)
-            fans = fansItems.pop("fans")
-            for i in range(len(fans)):
-                fansItems[str(i + 1)] = fans[i]
+            # fans = fansItems.pop("fans")
+            # for i in range(len(fans)):
+            #     fansItems[str(i + 1)] = fans[i]
             try:
                 self.Fans.insert(fansItems)
             except Exception:

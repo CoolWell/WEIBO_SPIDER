@@ -31,8 +31,8 @@ class TweetsItem(Item):
     Co_oridinates = Field()  # 定位坐标
     Tools = Field()  # 发表工具/平台
     Like = Field()  # 点赞数
-    Comment = Field()  # 评论数
-    Transfer = Field()  # 转载数
+    CommentNum = Field()  # 评论数
+    TransferNum = Field()  # 转载数
     ColTime = Field()#weibo 采集时间
 
 

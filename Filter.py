@@ -24,7 +24,7 @@ def out():
     source = db['weibo_id_after']
     f = open(r'C:\weibo.txt', 'a')
     for i, item in enumerate(source.find()):
-        if i == 2000:
+        if i == 20000:
             break
         f.write(item['_id']+'\n')
     f.close()
